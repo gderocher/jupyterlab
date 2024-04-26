@@ -331,7 +331,7 @@ namespace Private {
       return title.join('\n\n');
     }
 
-    private get _summary(): string | undefined {
+    private get _summary(): string {
       const children = this.children;
       return children.length == 1
         ? children[0].name()
